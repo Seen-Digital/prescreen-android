@@ -1,3 +1,5 @@
+[![](https://jitpack.io/v/Seen-Digital/prescreen-android.svg)](https://jitpack.io/#Seen-Digital/prescreen-android)
+
 # PreScreen OCR Library
 
 ## Prerequisite
