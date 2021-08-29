@@ -1,0 +1,3 @@
+install:
+  - FILE="-Dfile=prescreen-release.aar"
+  - mvn install:install-fire $FILE -Dpackaging=aar -DpomFile=pom-default.xml
