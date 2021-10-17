@@ -70,6 +70,7 @@ val confidence: Float =
   - `error`: If the recognition is successful, the `error` will be null. In case of unsuccessful scan, the `error.errorMessage` will contain the problem of the recognition.
   - `isFrontSide`: A boolean flag indicates whether the scan found the front side (`true`) or back side (`false`) of the card ID.
   - `confidence`: A value between 0.0 to 1.0 (higher values mean more likely to be an ID card).
+  - `isFrontCardFull`: A boolean flag indicates whether the scan detect a full front-sde card.
   - `texts`: A list of OCR results. An OCR result consists of `type` and `text`.
     - `type`: Type of information. Right now, PreScreen support 3 types
       - `ID`
