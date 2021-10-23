@@ -65,11 +65,8 @@
     - `confidence`: A value between 0.0 to 1.0 (higher values mean more likely to be an ID card).
     - `isFrontCardFull`: A boolean flag indicates whether the scan detect a full front-sde card.
     - `texts`: A list of OCR results. An OCR result consists of `type` and `text`.
-      - `type`: Type of information. Right now, PreScreen support 3 types
-          - `ID`
-          - `SERIAL_NUMBER`
-          - `LASER_CODE`
-      - `text`: OCR text based on the `type`.
+        - `type`: Type of information. Right now, PreScreen support 3 types: `ID`, `SERIAL_NUMBER`, and `LASER_CODE`
+        - `text`: OCR text based on the `type`.
     - `fullImage`: A bitmap image of the full frame used during scanning.
     - `croppedImage`: A bitmap image of the card. This is available if `isFrontSide` is `true`.
     - `classificationResult`: A result from ML image labeling, available if `isFrontCardFull` is `true`.
