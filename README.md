@@ -80,8 +80,8 @@ val confidence: Float =
   - `fullImage`: A bitmap image of the full frame used during scanning.
   - `croppedImage`: A bitmap image of the card. This is available if `isFrontSide` is `true`.
   - `classificationResult`: A result from ML image labeling, available if `isFrontCardFull` is `true`.
-	- `classificationResult.confidence`: A confidence value from 0 to 1. Higher values mean the images are more likely to be good quality. The threshold of `0.6` to `0.9` is recommended. 
-	- `classificationResult.error`: An object for error messages.
+	- `confidence`: A confidence value from 0 to 1. Higher values mean the images are more likely to be good quality. The threshold of `0.6` to `0.9` is recommended. 
+	- `error`: An object for error messages.
 
   ```kotlin
   private fun displayResult(result: IDCardResult) {
